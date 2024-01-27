@@ -31,7 +31,7 @@ const Header = () => {
           <select name="" id="">
             <option value="">All</option>
           </select>
-          <input type="text" />
+          <input type="text" placeholder='Search Amazon'/>
           <BsSearch size={25}/>
         </div>
 
@@ -62,8 +62,8 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <LowerHeader />
     </section>
+    <LowerHeader />
     </>
   )
 }

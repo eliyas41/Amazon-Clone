@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   width: 100%;
   flex: 1;
@@ -64,8 +64,15 @@
 
 .search select{
   border: none;
+  cursor: pointer;
+  color: #353e49;
+  font-weight: lighter;
 }
 
+.search select:hover{
+  background-color: rgb(227, 224, 219);
+  color: #111;
+}
 .search input{
   border: 1px solid white;
   width: 100%;
@@ -84,7 +91,7 @@
 }
 
 .search:focus-within{
-  border: 2px solid rgb(235, 161, 173);
+  border: 3px solid orange;
 }
 
 .order_container{
