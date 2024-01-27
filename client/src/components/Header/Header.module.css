@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.header_container{
+  background-color: #1a1a1a;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  height: 60px;
+}
+
+.logo_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+}
+
+.logo_container img{
+  width: 80%;
+  height: 35px;
+  object-fit: contain;
+  padding-top: 10px;
+  padding-right: 5PX;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.delivery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.delivery p{
+  font-size: 13px;
+  color: rgb(217, 207, 207);
+  font-weight: lighter;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+}
+
+.search select,
+.search input {
+  padding: 10px;
+  font-weight: bold;
+  outline: 1px solid white;
+}
+
+.search select{
+  border: none;
+}
+
+.search input{
+  border: 1px solid white;
+  width: 100%;
+  margin-right: -2px;
+}
+
+.search svg {
+  padding: 7px;
+  background-color: #fabd69;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.search svg:hover{
+  background-color: #d49644;
+}
+
+.search:focus-within{
+  border: 2px solid rgb(235, 161, 173);
+}
+
+.order_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  gap: 10px;
+}
+
+.order_container a{
+  text-decoration: none;
+  color: white;
+}
+
+.order_container p{
+  font-size: 10px;
+}
+
+.language{
+  width: 80px;
+  display: flex;
+  padding: 12px;
+}
+
+.language select{
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+}
+
+.language img{
+  width: 40%;
+  padding: 0.6px;
+}
+
+.signin_button,
+.order_button{
+  padding: 6px;
+}
+
+.cart{
+  position: relative;
+}
+
+.cart .count{
+  position: absolute;
+  font-weight: bold;
+  top: 0px;
+  font-size: 18px;
+  background-color: #1a1a1a;
+  left: 16px;
+  color: orange;
+}
+
+.cart svg{
+  margin-top: 5px;
+  margin-right: 4px;
+  height: 30px;
+}
+
+.cart_title{
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.order_container a:hover,
+.delivery:hover,
+.logo_container a:hover,
+.lower_container ul li:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
