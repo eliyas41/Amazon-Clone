@@ -34,7 +34,7 @@ const Footer = () => {
                 <li><a href="">Advertise Your Products</a></li>
                 <li><a href="">Self-Publish with Us</a></li>
                 <li><a href="">Host an Amazon Hub</a></li>
-                <li><a href="">›See More Make Money with Us</a></li>
+                <li><a href="">›See More Make Money <br /> with Us</a></li>
               </ul>
             </div>
 
