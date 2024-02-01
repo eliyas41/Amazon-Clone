@@ -6,11 +6,11 @@ import classes from "./category.module.css"
 const Category = () => {
   
   return (
-    <section className={classes.Category_container}>
+    <section className={classes.category_container}>
       {
-        categoryInfos.map((infos) => {
-          <CategoryCard data = {infos} />
-        })
+        categoryInfos.map((infos) => (
+          <CategoryCard key={infos.imgLink} data = {infos} />
+        ))
       }
     </section>
   )
