@@ -1,6 +1,7 @@
 .category{
   height: 300px;
-  width: 300px;
+  /* width: 300px; */
+  width: 80%;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -36,4 +37,14 @@
   grid-template-columns: repeat(4, 1fr);
   max-width: 100%;
   place-items: center;
+}
+
+@media screen and (max-width: 760px) {
+  .category_container{
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category h2{
+    font-size: 16px;
+  }
 }
