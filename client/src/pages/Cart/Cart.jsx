@@ -3,6 +3,7 @@ import LayOut from '../../components/LayaOut/LayOut';
 import classes from "./Cart.module.css"
 import { DataContext } from "../../components/DataProvider/DataProvider";
 import ProductCard from '../../components/Product/ProductCard';
+import CurrencyFormat from "../../components/CurrencyFormat/CurrencyFormat"
 import { Link } from 'react-router-dom';
 import { Type } from '../../utility/action.type';
 import {IoIosArrowDown} from "react-icons/io"
@@ -37,7 +38,8 @@ const Cart = () => {
           <h3>Your shopping basket</h3>
           <hr />
           {
-            basket?.length==0?(<p>Opps ! No item in your cart</p>) : (basket?.map((item, index) => {
+            basket?.length==0?(<p>Opps ! No item in your cart</p>) : (
+              basket?.map((item, index) => {
               return <section className={classes.cart_product}>
               <ProductCard 
               key={index}
@@ -47,9 +49,9 @@ const Cart = () => {
               flex={true}
               />
               <div className={classes.btn_container}>
-                <button className={classes.btn} onClick={()=>increment(item)}><IoIosArrowUp size={30} /></button>
+                <button className={classes.btn} onClick={()=>increment(item)}><IoIosArrowUp size={20} /></button>
                 <span>{item.amount}</span>
-                <button className={classes.btn} onClick={()=>decrement(item.id)}> <IoIosArrowDown size={30} /></button>
+                <button className={classes.btn} onClick={()=>decrement(item.id)}> <IoIosArrowDown size={20} /></button>
               </div>
               </section>
             })
@@ -61,7 +63,7 @@ const Cart = () => {
           <div className={classes.subtotal}>
             <div>
               <p>Subtotal ({basket?.length} items)</p>
-              {/* <CurrencyFormat amount = {total} /> */}
+              <CurrencyFormat amount = {total} />
             </div>
             <span>
               <input type="checkbox" />

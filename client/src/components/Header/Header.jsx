@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { BsSearch } from "react-icons/bs";
-import { SlLocationPin } from "react-icons/sl";
-import { BiCart } from "react-icons/bi";
 import classes from "./Header.module.css"
-import LowerHeader from './LowerHeader';
 import { Link } from "react-router-dom";
+import { SlLocationPin } from "react-icons/sl";
+import { BsSearch } from "react-icons/bs";
+import { BiCart } from "react-icons/bi";
+import LowerHeader from './LowerHeader';
 import { DataContext } from '../DataProvider/DataProvider';
 
 const Header = () => {
@@ -65,8 +65,7 @@ const Header = () => {
 
           <Link to="/cart" className={classes.cart} >
             <BiCart size={35}/> 
-            <span className={classes.count}>{totalItem}</span>
-            <span className={classes.cart_title}>cart</span>
+            <span>{totalItem}</span>
           </Link>
         </div>
       </div>
@@ -77,3 +76,4 @@ const Header = () => {
 }
 
 export default Header;
+

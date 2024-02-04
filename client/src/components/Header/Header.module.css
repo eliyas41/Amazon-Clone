@@ -139,29 +139,18 @@
   padding: 6px;
 }
 
-.cart{
+.cart {
   position: relative;
+  margin-right: 5px;
 }
-
-.cart .count{
+.cart span {
   position: absolute;
   font-weight: bold;
-  top: 0px;
-  font-size: 18px;
+  top: -6px;
+  font-size: 20px;
   background-color: #1a1a1a;
-  left: 16px;
-  color: orange;
-}
-fixed
-.cart svg{
-  margin-top: 5px;
-  margin-right: 4px;
-  height: 30px;
-}
-
-.cart_title{
-  font-weight: bold;
-  padding-right: 10px;
+  left: 14px;
+  color: orange
 }
 
 .order_container a:hover,
