@@ -26,21 +26,23 @@ const Result = () => {
   return (
     <LayOut>
         <section>
-          <h1 style={{padding: "300px"}}>Results</h1>
+          <h1 style={{padding: "30px"}}>Results</h1>
           <p style={{padding: "30px"}}>Category / {categoryName}</p>
           <hr />
 
-          {
-            isLoading? (<Loader />) : (<div className={classes.products_container}>
+          {/* { */}
+            {/* isLoading? (<Loader />) : ( */}
+              <div className={classes.products_container}>
               {results?.map((product) => (
                 <ProductCard 
                     key={product.id}
-                    renderAdd={true}
                     product={product}
+                    renderDesc={false}
+                    renderAdd={true}
                 />
               ))}
             </div>
-            )}    
+            {/* )}     */}
         </section>
     </LayOut>
   )

@@ -17,6 +17,7 @@ const ProductDetail = () => {
     .then((res) => {
       setProduct(res.data)
       setLoading(false)
+      // console.log(res.data);
     }).catch((err) => {
       console.log(err);
       setLoading(false)
@@ -24,10 +25,12 @@ const ProductDetail = () => {
   }, [])
   return (
     <LayOut>
-      {isLoading? (<Loader />):(<ProductCard 
+      {isLoading? (<Loader />):(
+      <ProductCard 
       product={product}
       flex={true}
       renderDesc={true}
+      renderAdd={true}
       />)}
     </LayOut>
   )
