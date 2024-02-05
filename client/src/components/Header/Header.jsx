@@ -45,7 +45,7 @@ const Header = () => {
 
       {/* orders Section*/}
         <div className={classes.order_container}>
-          <Link to="" className={classes.language}>
+          <Link to="#" className={classes.language}>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png" alt="" />
 
             <select name="" id="">
@@ -53,7 +53,7 @@ const Header = () => {
             </select>
           </Link>
             
-          <Link to="" className={classes.signin_button}>
+          <Link to="/auth" className={classes.signin_button}>
               <p>Sign In</p>
               <span>Account & Lists</span>
           </Link>
@@ -76,4 +76,3 @@ const Header = () => {
 }
 
 export default Header;
-
