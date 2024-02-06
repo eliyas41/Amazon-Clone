@@ -5,14 +5,15 @@ import classes from "./Product.module.css"
 import Loader from '../Loader/Loader';
 
 const Product = () => {
-  const [products, setProducts] = useState()
-  const [isLoading, setLoading] = useState(false)
+  const [products, setProducts] = useState();
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products")
     .then((res) => {
       setProducts(res.data)
       setLoading(false)
+      // console.log(res.data);
     }).catch((err) => {
       console.log(err);
       setLoading(false)
@@ -26,8 +27,9 @@ const Product = () => {
         {
           products?.map((singleProduct) => {
             return <ProductCard 
-            product={singleProduct} 
             key={singleProduct.id} 
+            product={singleProduct} 
+            renderDesc={false}
             renderAdd={true}
             />
           })

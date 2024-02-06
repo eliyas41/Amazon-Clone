@@ -13,8 +13,8 @@ function ProductCard({product, flex, renderDesc, renderAdd}) {
 
     const addToCart = () => {
       dispatch({
-        type: Type.ADD_TO_BASKET,
-        item: {
+        type:Type.ADD_TO_BASKET,
+        item:{
           image, title, id, rating, price, description
         }
       })
@@ -32,9 +32,9 @@ function ProductCard({product, flex, renderDesc, renderAdd}) {
           <div className={classes.rating}>
                 {/* rating */}
               <Rating value={rating?.rate} precision={0.1}/>
-                  {/* count  */}
-                <small>{rating?.count}</small>
-            </div>
+                      {/* count  */}
+              <small>{rating?.count}</small>
+          </div>
 
             <div>
                 {/* price */}
@@ -42,7 +42,7 @@ function ProductCard({product, flex, renderDesc, renderAdd}) {
             </div>
 
             {
-              renderAdd && <button className={classes.button}onClick={addToCart}>
+              renderAdd && <button className={classes.button} onClick={addToCart}>
               add to cart
               </button>
             }

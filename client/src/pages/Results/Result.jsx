@@ -17,7 +17,7 @@ const Result = () => {
     .then((res) => {
       setResults(res.data)
       setLoading(false)
-      // console.log(res.data);
+      console.log(res.data);
     }).catch((err) => {
       console.log(err);
       setLoading(false)
