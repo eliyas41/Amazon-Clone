@@ -1,7 +1,6 @@
 .category{
   height: 300px;
-  /* width: 300px; */
-  width: 80%;
+  width: 300px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -9,7 +8,7 @@
 .category img{
   width: 90%;
   object-fit: contain;
-  max-height: 200px;
+  max-height: 216px;
   padding: 0px 13px;
 }
 
