@@ -41,10 +41,10 @@ const Cart = () => {
           <hr />
           {
             basket?.length == 0 ? (<p>Opps ! No item in your cart</p>) : (
-              basket?.map((item, i) => {
+              basket?.map((item, index) => {
                 return <section className={classes.cart_product}>
                   <ProductCard
-                    key={i}
+                    key={index}
                     product={item}
                     renderDesc={true}
                     renderAdd={false}
