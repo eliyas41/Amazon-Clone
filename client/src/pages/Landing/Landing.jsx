@@ -1,5 +1,5 @@
 import React from 'react'
-import LayOut from '../../components/LayaOut/LayOut';
+import LayOut from '../../components/LayOut/LayOut';
 import Carousel from '../../components/Carousel/CarouselEffect';
 import Category from '../../components/Category/Category';
 import Product from '../../components/Product/Product';
@@ -13,7 +13,7 @@ const Landing = () => {
       <Carousel />
       <Category />
       <Product />
-      <Footer/>
+      <Footer />
     </LayOut>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import LayOut from '../../components/LayaOut/LayOut';
+import LayOut from '../../components/LayOut/LayOut';
 import classes from "./Cart.module.css"
 import { DataContext } from "../../components/DataProvider/DataProvider";
 import ProductCard from '../../components/Product/ProductCard';
@@ -41,10 +41,10 @@ const Cart = () => {
           <hr />
           {
             basket?.length == 0 ? (<p>Opps ! No item in your cart</p>) : (
-              basket?.map((item, index) => {
+              basket?.map((item, i) => {
                 return <section className={classes.cart_product}>
                   <ProductCard
-                    key={index}
+                    key={i}
                     product={item}
                     renderDesc={true}
                     renderAdd={false}
