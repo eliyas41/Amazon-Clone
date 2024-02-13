@@ -9,9 +9,10 @@ import { axiosInstance } from '../../Api/axios';
 import { ClipLoader } from "react-spinners";
 import { db } from '../../utility/firebase';
 import { useNavigate } from 'react-router-dom';
+import { Type } from '../../utility/action.type';
 
 const Payment = () => {
-  const [{ user, basket }] = useContext(DataContext);
+  const [{ user, basket }, dispatch] = useContext(DataContext);
   const [carderror, setCardError] = useState();
   // console.log(carderror);
   // console.log(user);
@@ -68,7 +69,10 @@ const Payment = () => {
             amount: paymentIntent.amount,
             created: paymentIntent.created,
           });
-        console.log("Order document successfully written to Firestore.");
+
+        //the basket should be empty after purchase and Items set to the database 
+        dispatch({ type: Type.EMPTY_BASKET })
+        // console.log("Order document successfully written to Firestore.");
       } catch (error) {
         console.error("Error writing order document to Firestore:", error);
       }
