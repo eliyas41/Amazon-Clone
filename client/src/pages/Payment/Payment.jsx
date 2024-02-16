@@ -108,7 +108,7 @@ const Payment = () => {
           <h3>Review items and Delivery</h3>
           <div>
             {
-              basket.map((item) => <ProductCard product={item} flex={true} key={item.id} />)
+              basket?.map((item) => <ProductCard product={item} flex={true} key={item.id} />)
             }
           </div>
         </div>

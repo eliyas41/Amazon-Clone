@@ -7,6 +7,7 @@ import { BiCart } from "react-icons/bi";
 import LowerHeader from "./LowerHeader";
 import { DataContext } from "../DataProvider/DataProvider";
 import { auth } from "../../utility/firebase";
+import { Element } from "react-scroll";
 
 const Header = () => {
   const [{ user, basket }, dispatch] = useContext(DataContext);
@@ -19,6 +20,7 @@ const Header = () => {
 
   return (
     <section className={classes.fixed}>
+      <Element name="top" />
       <section>
         <div className={classes.header_container}>
           <div className={classes.logo_container}>
