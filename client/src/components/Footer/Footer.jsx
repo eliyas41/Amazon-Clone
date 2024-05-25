@@ -10,7 +10,7 @@ const Footer = () => {
   const scrollToTop = () => {
     scroll.scrollToTop({
       duration: 500, // Adjust the duration as needed
-      smooth: 'easeInOutQuad', // You can use other easing functions
+      smooth: 'easeInOutQuad',
     });
   };
 
